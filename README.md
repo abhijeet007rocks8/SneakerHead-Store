@@ -4,11 +4,11 @@
 
 ### Participants
 
-Github : @VanshajPoonia @HarshvardhanMor
+Github : [@abhijeet007rocks8](https://github.com/abhijeet007rocks8) [@manisha-27](https://github.com/manisha-27)
 
-Twitter : @VanshajPoonia @HarshvardhanMor
+Twitter : [@Abhijeet Chatterjee](https://twitter.com/Abhijee58090064) [@Manisha Singh]()
 
-Discord : VanshajPoonia#2992   ! Shield 🌙#4151
+Discord : Abhijeet#1624  ||  Macsia#7113
 
 ### Description
 
@@ -49,24 +49,27 @@ Done with the pre-requisites?
 
 Here are the steps to be taken after that :
 
+```medusa new my-medusa-store --seed```
+To setup store
+
 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/VanshajPoonia/shopeee.git
+git clone https://github.com/abhijeet007rocks8/SportsFactory.git
 ```
 
 1. Change directory and install dependencies:
 
 ```bash
-cd shopeee
-medusa new my-medusa-store --seed
-cd my-medusa-store
+cd SportsFactory
+cd Backend
 medusa develop
 cd ..
-cd my-store-front && yarn
+cd Frontend && yarn install
 yarn dev
 ```
+
 **PLEASE NOTE** THAT IT IS RECOMMENDED TO USE **CMD AS ADMINISTRATOR** while running the commands as the code might show some abnormal behaviour **sometimes**.
 ## Resources
 
