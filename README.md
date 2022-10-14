@@ -1,6 +1,6 @@
 # Shopeee
 
-[![mylogo.png](https://s4.gifyu.com/images/mylogo.png)](https://gifyu.com/image/S9s0G)
+![mylogo.png](./logoW.webp)
 
 ### Participants
 
