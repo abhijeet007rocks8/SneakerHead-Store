@@ -50,9 +50,15 @@ Done with the pre-requisites?
 
 Here are the steps to be taken after that :
 
-```medusa new my-medusa-store --seed```
-To setup store
+```bash
+medusa new my-medusa-store --seed
+```
+To setup a new store 
 
+To use exiting Seed file in DB
+```bash
+medusa seed -f ./data/seed.json
+```
 
 1. Clone the repository:
 
