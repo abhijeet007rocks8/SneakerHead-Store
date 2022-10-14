@@ -1,0 +1,139 @@
+{
+    "title": "Decathalon Hiking Warm Waterproof Shoes - SH520 X-WARM MID",
+    "subtitle": null,
+    "description": "Want to climb snowy slopes? We have designed this warm, waterproof shoe for hikers, offering the perfect grip for walking in the mountains.",
+    "handle": "Hiking-Shoes-2",
+    "is_giftcard": false,
+    "weight": 400,
+    "images": [
+      "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/Hiking%20Shoes/HTshoes2/HTshoes2-black.jpg"
+    ],
+    "options": [
+      {
+        "title": "Size",
+        "values": ["7","8","9","10","11","12"]
+      }
+    ],
+    "variants": [
+      {
+        "title": "7",
+        "prices": [
+          {
+            "currency_code": "eur",
+            "amount": 4999
+          },
+          {
+            "currency_code": "usd",
+            "amount": 550
+          }
+        ],
+        "options": [
+          {
+            "value": "7"
+          }
+        ],
+        "inventory_quantity": 100,
+        "manage_inventory": true
+      },
+      {
+        "title": "8",
+        "prices": [
+          {
+            "currency_code": "eur",
+            "amount": 4999
+          },
+          {
+            "currency_code": "usd",
+            "amount": 550
+          }
+        ],
+        "options": [
+          {
+            "value": "8"
+          }
+        ],
+        "inventory_quantity": 100,
+        "manage_inventory": true
+      },
+      {
+        "title": "9",
+        "prices": [
+          {
+            "currency_code": "eur",
+            "amount": 4999
+          },
+          {
+            "currency_code": "usd",
+            "amount": 550
+          }
+        ],
+        "options": [
+          {
+            "value": "9"
+          }
+        ],
+        "inventory_quantity": 100,
+        "manage_inventory": true
+      },
+      {
+        "title": "10",
+        "prices": [
+          {
+            "currency_code": "eur",
+            "amount": 4999
+          },
+          {
+            "currency_code": "usd",
+            "amount": 550
+          }
+        ],
+        "options": [
+          {
+            "value": "10"
+          }
+        ],
+        "inventory_quantity": 100,
+        "manage_inventory": true
+      },
+      {
+        "title": "11",
+        "prices": [
+          {
+            "currency_code": "eur",
+            "amount": 4999
+          },
+          {
+            "currency_code": "usd",
+            "amount": 550
+          }
+        ],
+        "options": [
+          {
+            "value": "11"
+          }
+        ],
+        "inventory_quantity": 100,
+        "manage_inventory": true
+      },
+      {
+        "title": "12",
+        "prices": [
+          {
+            "currency_code": "eur",
+            "amount": 4999
+          },
+          {
+            "currency_code": "usd",
+            "amount": 550
+          }
+        ],
+        "options": [
+          {
+            "value": "12"
+          }
+        ],
+        "inventory_quantity": 100,
+        "manage_inventory": true
+      }
+    ]
+  }

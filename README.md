@@ -39,8 +39,6 @@ Here are some pre-requisites that you may require to run the project on your sys
 Prerequisites:
 
 - Medusa CLI (```npm install -g @medusajs/medusa-cli```) .
-- Redis (https://redis.io/)
-- PostgreSQL (https://www.postgresql.org/)
 - Node (https://node.org/)
 - yarn (https://yarnpkg.com/)
 
@@ -50,23 +48,13 @@ Done with the pre-requisites?
 
 Here are the steps to be taken after that :
 
-```bash
-medusa new my-medusa-store --seed
-```
-To setup a new store 
-
-To use exiting Seed file in DB
-```bash
-medusa seed -f ./data/seed.json
-```
-
 1. Clone the repository:
 
 ```bash
 git clone https://github.com/abhijeet007rocks8/SportsFactory.git
 ```
 
-1. Change directory and install dependencies:
+2. Change directory and install dependencies:
 
 ```bash
 cd SportsFactory
@@ -78,6 +66,17 @@ Open another terminal using path of cloned repository
 cd Frontend 
 yarn install
 yarn dev
+```
+
+3. (Optional)
+To setup a new store 
+```bash
+medusa new my-medusa-store --seed
+```
+
+To use exiting Seed file in DB
+```bash
+medusa seed -f ./data/seed.json
 ```
 
 **PLEASE NOTE** THAT IT IS RECOMMENDED TO USE **CMD AS ADMINISTRATOR** while running the commands as the code might show some abnormal behaviour **sometimes**.
