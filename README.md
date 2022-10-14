@@ -1,4 +1,4 @@
-# Shopeee
+# Sneaker-Head Store
 
 ![mylogo.png](./logoW.webp)
 
@@ -42,6 +42,7 @@ Prerequisites:
 - Redis (https://redis.io/)
 - PostgreSQL (https://www.postgresql.org/)
 - Node (https://node.org/)
+- yarn (https://yarnpkg.com/)
 
 ### Install Project
 
@@ -65,8 +66,11 @@ git clone https://github.com/abhijeet007rocks8/SportsFactory.git
 cd SportsFactory
 cd Backend
 medusa develop
-cd ..
-cd Frontend && yarn install
+```
+Open another terminal using path of cloned repository
+```bash
+cd Frontend 
+yarn install
 yarn dev
 ```
 
