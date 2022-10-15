@@ -1,0 +1,1447 @@
+{
+  "store": {
+    "currencies": ["eur", "usd"]
+  },
+  "users": [
+    {
+      "email": "admin@medusa-test.com",
+      "password": "supersecret"
+    }
+  ],
+  "regions": [
+    {
+      "id": "test-region-eu",
+      "name": "EU",
+      "currency_code": "eur",
+      "tax_rate": 0,
+      "payment_providers": ["manual"],
+      "fulfillment_providers": ["manual"],
+      "countries": ["gb", "de", "dk", "se", "fr", "es", "it"]
+    },
+    {
+      "id": "test-region-na",
+      "name": "NA",
+      "currency_code": "usd",
+      "tax_rate": 0,
+      "payment_providers": ["manual"],
+      "fulfillment_providers": ["manual"],
+      "countries": ["us", "ca"]
+    }
+  ],
+  "shipping_options": [
+    {
+      "name": "PostFake Standard",
+      "region_id": "test-region-eu",
+      "provider_id": "manual",
+      "data": {
+        "id": "manual-fulfillment"
+      },
+      "price_type": "flat_rate",
+      "amount": 1000
+    },
+    {
+      "name": "PostFake Express",
+      "region_id": "test-region-eu",
+      "provider_id": "manual",
+      "data": {
+        "id": "manual-fulfillment"
+      },
+      "price_type": "flat_rate",
+      "amount": 1500
+    },
+    {
+      "name": "PostFake Return",
+      "region_id": "test-region-eu",
+      "provider_id": "manual",
+      "data": {
+        "id": "manual-fulfillment"
+      },
+      "price_type": "flat_rate",
+      "is_return": true,
+      "amount": 1000
+    },
+    {
+      "name": "I want to return it myself",
+      "region_id": "test-region-eu",
+      "provider_id": "manual",
+      "data": {
+        "id": "manual-fulfillment"
+      },
+      "price_type": "flat_rate",
+      "is_return": true,
+      "amount": 0
+    },
+    {
+      "name": "FakeEx Standard",
+      "region_id": "test-region-na",
+      "provider_id": "manual",
+      "data": {
+        "id": "manual-fulfillment"
+      },
+      "price_type": "flat_rate",
+      "amount": 800
+    },
+    {
+      "name": "FakeEx Express",
+      "region_id": "test-region-na",
+      "provider_id": "manual",
+      "data": {
+        "id": "manual-fulfillment"
+      },
+      "price_type": "flat_rate",
+      "amount": 1200
+    },
+    {
+      "name": "FakeEx Return",
+      "region_id": "test-region-na",
+      "provider_id": "manual",
+      "data": {
+        "id": "manual-fulfillment"
+      },
+      "price_type": "flat_rate",
+      "is_return": true,
+      "amount": 800
+    },
+    {
+      "name": "I want to return it myself",
+      "region_id": "test-region-na",
+      "provider_id": "manual",
+      "data": {
+        "id": "manual-fulfillment"
+      },
+      "price_type": "flat_rate",
+      "is_return": true,
+      "amount": 0
+    }
+  ],
+  "products": [
+    {
+      "title": "Nike Flytrap Basketball Shoes",
+      "subtitle": null,
+      "description": "Extra-durable rubber outsole is designed to play on rugged outdoor courts.",
+      "handle": "BasketBall-Shoes-1",
+      "is_giftcard": false,
+      "weight": 450,
+      "images": [
+         "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/BasketBall%20Shoes/BasketballShoes1/basketball1-black.jpg",
+         "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/BasketBall%20Shoes/BasketballShoes1/basketball1-white.jpg"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": ["8", "9"]
+        },
+        {
+          "title": "Color",
+          "values": ["White", "Black"]
+        }
+      ],
+      "variants": [
+        {
+          "title": "8/White",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 36000
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "8"
+            },
+            {
+              "value": "White"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "8/Black",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 36000
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "8"
+            },
+            {
+              "value": "Black"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "9/White",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 36500
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "9"
+            },
+            {
+              "value": "White"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "9/Black",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 36500
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "9"
+            },
+            {
+              "value": "Black"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    },
+    {
+      "title": "Decathalon Mens Basketball Shoes",
+      "subtitle": null,
+      "description": "shoes are designed with a both lightweight and rigid, anatomically shaped plate made from TPU (Thermoplastic Polyurethane), a polymer with superior performance, in the sole situated between 2 distinctly different, extremely responsive EVA foam layers",
+      "handle": "BasketBall-Shoes-2",
+      "is_giftcard": false,
+      "weight": 450,
+      "images": [
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/BasketBall%20Shoes/BasketballShoes2/basketball2-black.jpg",
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/BasketBall%20Shoes/BasketballShoes2/basketball2-navy.jpg",
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/BasketBall%20Shoes/BasketballShoes2/basketball2-pink.jpg",
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/BasketBall%20Shoes/BasketballShoes2/basketball2-sky.jpg",
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/BasketBall%20Shoes/BasketballShoes2/basketball2-white.jpg"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": ["9"]
+        },
+        {
+          "title": "Color",
+          "values": ["Black", "Navy", "Pink", "Sky", "White" ]
+        }
+      ],
+      "variants": [
+        {
+          "title": "9/Black",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 26000
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "9"
+            },
+            {
+              "value": "Black"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "9/Navy",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 26000
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "9"
+            },
+            {
+              "value": "Navy"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "9/Pink",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 26500
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "9"
+            },
+            {
+              "value": "Pink"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "9/Sky",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 36000
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "9"
+            },
+            {
+              "value": "Sky"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "9/White",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 28000
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "9"
+            },
+            {
+              "value": "White"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    },
+    {
+      "title": "Decathalon Mens Football Boots",
+      "subtitle": null,
+      "description": "These football boots are the result of a multitude of choices all made with the same goal: make the most comfortable football boot possible for under €30! Upper made of soft PU on the forefoot, mesh fabric lining on the heel, preformed insole, wide tongue attached at the base that does not twist and keeps the foot nice and snug in place during play. A pronounced contour and raised back of the heel help support your foot and keep it nicely in place.",
+      "handle": "Football-Shoes-1",
+      "is_giftcard": false,
+      "weight": 450,
+      "images": [
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/Football%20Shoes/FootballShoes1/football1-black.jpg",
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/Football%20Shoes/FootballShoes1/football1-blue.jpg"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": ["7","8","9"]
+        },
+        {
+          "title": "Color",
+          "values": ["Black", "Blue"]
+        }
+      ],
+      "variants": [
+        {
+          "title": "7/Black",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 26000
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "7"
+            },
+            {
+              "value": "Black"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "7/Blue",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 26000
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "7"
+            },
+            {
+              "value": "Blue"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "8/Black",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 26500
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "8"
+            },
+            {
+              "value": "Black"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "8/Blue",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 36000
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "8"
+            },
+            {
+              "value": "Blue"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "9/Black",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 28000
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "9"
+            },
+            {
+              "value": "Black"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "9/Blue",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 36000
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "9"
+            },
+            {
+              "value": "Blue"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    },
+    {
+      "title": "Puma Mens Future Football Boots",
+      "subtitle": null,
+      "description": "More adaptive and more comfortable than ever, the FUTURE Z 4.4 is a progressive boot for skilled players with vision.",
+      "handle": "Football-Shoes-2",
+      "is_giftcard": false,
+      "weight": 350,
+      "images": [
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/Football%20Shoes/FootballShoes2/football2-black.jpg",
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/Football%20Shoes/FootballShoes2/football2-red.jpg"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": ["7","8"]
+        },
+        {
+          "title": "Color",
+          "values": ["Black", "Red"]
+        }
+      ],
+      "variants": [
+        {
+          "title": "7/Black",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 24000
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "7"
+            },
+            {
+              "value": "Black"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "7/Red",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 24500
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "7"
+            },
+            {
+              "value": "Red"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "8/Black",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 26500
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "8"
+            },
+            {
+              "value": "Black"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "8/Red",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 27000
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "8"
+            },
+            {
+              "value": "Red"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    },
+    {
+      "title": "Decathalon Mens Running Shoes",
+      "subtitle": null,
+      "description": "These lightweight mens running shoes provide cushioning for running up to 5km per week.",
+      "handle": "Running-Shoes-1",
+      "is_giftcard": false,
+      "weight": 400,
+      "images": [
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/Running%20Shoes/RunningShoes1/running1-blue.jpg",
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/Running%20Shoes/RunningShoes1/running1-grey.jpg"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": ["9","10"]
+        },
+        {
+          "title": "Color",
+          "values": ["Blue", "Grey"]
+        }
+      ],
+      "variants": [
+        {
+          "title": "9/Blue",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 1300
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "9"
+            },
+            {
+              "value": "Blue"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "9/Grey",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 1300
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "9"
+            },
+            {
+              "value": "Grey"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "10/Blue",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 1400
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "10"
+            },
+            {
+              "value": "Blue"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "10/Grey",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 1400
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "10"
+            },
+            {
+              "value": "Grey"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    },
+    {
+      "title": "Decathalon Womens Running Shoes Run Active",
+      "subtitle": null,
+      "description": "Our design teams developed these lightweight and cushioned womens running shoes for running up to 10km per week.",
+      "handle": "Running-Shoes-2",
+      "is_giftcard": false,
+      "weight": 350,
+      "images": [
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/Running%20Shoes/RunningShoes2/running2-black.jpg",
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/Running%20Shoes/RunningShoes2/running2-green.jpg",
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/Running%20Shoes/RunningShoes2/running2-pink1.jpg"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": ["6"]
+        },
+        {
+          "title": "Color",
+          "values": ["Black", "Green", "Pink"]
+        }
+      ],
+      "variants": [
+        {
+          "title": "6/Black",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 1200
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "6"
+            },
+            {
+              "value": "Black"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "6/Green",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 1200
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "6"
+            },
+            {
+              "value": "Green"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "6/Pink",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 1250
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "6"
+            },
+            {
+              "value": "Pink"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    },
+    {
+      "title": "Decathalon Men Badminton Shoes BS 530",
+      "subtitle": null,
+      "description": "Intermediate player who is looking for good cushioning shoes with lightweight & breathable upper provide comfortable feel allows them to use on-court.",
+      "handle": "Badminton-Shoes-1",
+      "is_giftcard": false,
+      "weight": 450,
+      "images": [
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/Badminton%20Shoes/BadmintonShoes1/badminton1-black.jpg",
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/Badminton%20Shoes/BadmintonShoes1/badminton1-blue.jpg",
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/Badminton%20Shoes/BadmintonShoes1/badminton1-green.jpg",
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/Badminton%20Shoes/BadmintonShoes1/badminton1-white.jpg"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": ["9"]
+        },
+        {
+          "title": "Color",
+          "values": ["Black", "Blue", "Green", "White"]
+        }
+      ],
+      "variants": [
+        {
+          "title": "9/Black",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 2799
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "9"
+            },
+            {
+              "value": "Black"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "9/Blue",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 2799
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "9"
+            },
+            {
+              "value": "Blue"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "9/Green",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 2799
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "9"
+            },
+            {
+              "value": "Green"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "9/White",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 2799
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "9"
+            },
+            {
+              "value": "White"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    },
+    {
+      "title": "Decathalon Men Badminton Shoes BS 160",
+      "subtitle": null,
+      "description": "Newly designed hummingbird texture rubber sole makes better gripping. To provide you a better grip and mobility.",
+      "handle": "Badminton-Shoes-2",
+      "is_giftcard": false,
+      "weight": 400,
+      "images": [
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/Badminton%20Shoes/BadmintonShoes2/badminton2-blue.jpg",
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/Badminton%20Shoes/BadmintonShoes2/badminton2-pink.jpg",
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/Badminton%20Shoes/BadmintonShoes2/badminton2-red.jpg"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": ["9","10"]
+        },
+        {
+          "title": "Color",
+          "values": ["Blue", "Pink", "Red"]
+        }
+      ],
+      "variants": [
+        {
+          "title": "9/Blue",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 2499
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "9"
+            },
+            {
+              "value": "Blue"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "10/Blue",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 2599
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "10"
+            },
+            {
+              "value": "Blue"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "9/Pink",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 2499
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "9"
+            },
+            {
+              "value": "Pink"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "10/Pink",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 2599
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "10"
+            },
+            {
+              "value": "Pink"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "9/Red",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 2499
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "9"
+            },
+            {
+              "value": "Red"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "10/Red",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 2599
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "10"
+            },
+            {
+              "value": "Red"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    },
+    {
+      "title": "Decathalon Mens Waterproof Hiking Boots NH150 Mid WP",
+      "subtitle": null,
+      "description": "Waterproof, comfortable shoes that provide good grip even on slightly uneven, hiking trails. Affordably priced and stylish in color. Tested to work in mild rain.",
+      "handle": "Hiking-Shoes-1",
+      "is_giftcard": false,
+      "weight": 400,
+      "images": [
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/Hiking%20Shoes/HTshoes1/HTshoes1-black.jpg",
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/Hiking%20Shoes/HTshoes1/HTshoes2-blue.jpg"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": ["9","10","11"]
+        },
+        {
+          "title": "Color",
+          "values": ["Black", "Blue"]
+        }
+      ],
+      "variants": [
+        {
+          "title": "9/Black",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 5999
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "9"
+            },
+            {
+              "value": "Black"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "10/Black",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 5999
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "10"
+            },
+            {
+              "value": "Black"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "11/Black",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 5999
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "11"
+            },
+            {
+              "value": "Black"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "9/Blue",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 5999
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "9"
+            },
+            {
+              "value": "Blue"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "10/Blue",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 5999
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "10"
+            },
+            {
+              "value": "Blue"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "11/Blue",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 2499
+            },
+            {
+              "currency_code": "usd",
+              "amount": 530
+            }
+          ],
+          "options": [
+            {
+              "value": "11"
+            },
+            {
+              "value": "Blue"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    },
+    {
+      "title": "Decathalon Hiking Warm Waterproof Shoes - SH520 X-WARM MID",
+      "subtitle": null,
+      "description": "Want to climb snowy slopes? We have designed this warm, waterproof shoe for hikers, offering the perfect grip for walking in the mountains.",
+      "handle": "Hiking-Shoes-2",
+      "is_giftcard": false,
+      "weight": 400,
+      "images": [
+        "https://raw.githubusercontent.com/abhijeet007rocks8/SneakerHead-Store/main/Data/Hiking%20Shoes/HTshoes2/HTshoes2-black.jpg"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": ["7","8","9","10","11","12"]
+        }
+      ],
+      "variants": [
+        {
+          "title": "7",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 4999
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "7"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "8",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 4999
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "8"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "9",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 4999
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "9"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "10",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 4999
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "10"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "11",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 4999
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "11"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "12",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 4999
+            },
+            {
+              "currency_code": "usd",
+              "amount": 550
+            }
+          ],
+          "options": [
+            {
+              "value": "12"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    }
+  ]
+}
