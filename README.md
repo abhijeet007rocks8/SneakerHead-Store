@@ -95,7 +95,7 @@ medusa seed -f ./data/seed.json
 ```
 
 ## Resources
-Here are some technologies that proved to be very useful throughout the process :
+Here are some resourves and documenatations that were very useful while making this project :
 
 - [Medusa’s GitHub repository](https://github.com/medusajs/medusa)
 - [How to Create Services](https://docs.medusajs.com/advanced/backend/services/create-service)
