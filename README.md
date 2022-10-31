@@ -69,14 +69,14 @@ Examples of Prerequisites:
 git clone https://github.com/abhijeet007rocks8/SportsFactory.git
 ```
 
-2. Change directory and install dependencies:
+2. Change the directory and install dependencies:
 
 ```bash
 cd SneakerHead-Store
 cd Backend
 medusa develop
 ```
-Open another terminal using path of cloned repository
+Open another terminal using the path of the cloned repository
 ```bash
 cd frontend 
 yarn install
@@ -84,18 +84,18 @@ yarn dev
 ```
 
 3. (Optional)<br/>
-To setup a new store 
+To set up a new store 
 ```bash
 medusa new my-medusa-store --seed
 ```
 
-To use exiting Seed file in DB
+To use the exiting Seed file in DB
 ```bash
 medusa seed -f ./data/seed.json
 ```
 
 ## Resources
-Here are some resourves and documenatations that were very useful while making this project :
+Here are some resources and documentation that were very useful while making this project :
 
 - [Medusa’s GitHub repository](https://github.com/medusajs/medusa)
 - [How to Create Services](https://docs.medusajs.com/advanced/backend/services/create-service)
